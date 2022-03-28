@@ -12,12 +12,15 @@ namespace Circle
         {
             int r = 2;
             circle c = new circle("Blue",2);
-            Console.WriteLine(c.radius);
-            Console.WriteLine(c.color);
+            Console.WriteLine("Radius = "+c.radius);
+            Console.WriteLine("Color = " + c.color);
             circle c1 = new circle(c);
+            Console.WriteLine("Radius = " + c1.radius);
+            Console.WriteLine("Color = " + c1.color);
             c1.color = "Green";
-            Console.WriteLine(c1.radius);
-            Console.WriteLine(c1.color);
+            c1.radius = 50;
+            Console.WriteLine("Radius = " + c1.radius);
+            Console.WriteLine("Color = " + c1.color);
         }
     }
 }
